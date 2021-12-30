@@ -1,0 +1,17 @@
+
+# Temporary files
+*.tmp
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# HELP document for local environment
+HELP.md
+
+# Local settings
+.env
+.envrc
+.node-version
+.tool-versions
