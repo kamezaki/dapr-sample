@@ -1,13 +1,13 @@
 import express, { Application } from 'express';
 import Server from './server/server';
 
-import entriesRoutes from './entries/routes';
+import idsRoutes from './ids/routes';
 
-const defaultPort = 3000;
+const defaultPort = 3100;
 const defaultPortString = "" + defaultPort;
 
 const routes = express.Router()
-  .use('/entries', entriesRoutes);
+  .use('/ids', idsRoutes);
 
 export default new Server()
   .router((app: Application) => app.use(routes))
